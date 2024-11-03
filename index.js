@@ -12,21 +12,36 @@ function calculateBMI() {
   let BMI = weight / (height * height);
 
   if (BMI < 18.5) {
-    alert(`your BMI is ${BMI}, Underweight!`)
+    alert(`your BMI is ${BMI}, Underweight!`);
   }
   else if (BMI > 18.5 && BMI < 24.9) {
-    alert(`your BMI is ${BMI}, Healthy Weight`)
+    alert(`your BMI is ${BMI}, Healthy Weight`);
   }
   else if (BMI > 25 && BMI < 29.9) {
-    alert(`your BMI is ${BMI}, Overweight!`)
+    alert(`your BMI is ${BMI}, Overweight!`);
   } else {
-    alert(`your BMI is ${BMI}, Obesity!`)
+    alert(`your BMI is ${BMI}, Obesity!`);
   }
 
-  if (age > 18 && age < 25 && BMI > 18 && BMI < 25 || age > 24 && age < 35 && BMI > 19 && BMI < 26 || age > 34 && age < 45 && BMI > 20 && BMI < 27 || age > 44 && age < 55 && BMI > 21 && BMI < 28 || age > 54 && age < 65 && BMI > 22 && BMI < 29 || age > 64 && BMI > 23 && BMI < 30) {
+  if (age > 18 && age < 25 && BMI > 18 && BMI < 25) {
+    alert("healthy");
+  }
+  else if (age > 24 && age < 35 && BMI > 19 && BMI < 26) {
+    alert("healthy");
+  }
+  else if (age > 34 && age < 45 && BMI > 20 && BMI < 27) {
+    alert("healthy");
+  }
+  else if (age > 44 && age < 55 && BMI > 21 && BMI < 28) {
+    alert("healthy");
+  }
+  else if (age > 54 && age < 65 && BMI > 22 && BMI < 29) {
+    alert("healthy");
+  }
+  else if (age > 64 && BMI > 23 && BMI < 30) {
     alert("healthy");
   }
   else {
-    alert("not healthy")
+    alert("not healthy");
   }
 }
